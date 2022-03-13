@@ -1,0 +1,35 @@
+{
+  "name": "govtech-bgp-e2e-test",
+  "version": "1.0.0",
+  "description": "This suite contains automated e2e tests written in Cypress, which covers the test automation for Gov Tech's Business Grants Portal. ",
+  "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitionshdhhdd": true,
+    "step_definitions": "./cypress/integration/bgp-e2e-tests/features/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
+  "scripts": {
+    "cy:run-e2e:chrome": "cypress run --browser chrome",
+    "cy:run-e2e:firefox": "cypress run --browser firefox",
+    "cy:report": "node cypress/cucumber-html-report.js",
+    "cy:compelete": "npm run cy:run-e2e:chrome ; npm run cy:report"
+  },
+  "author": "Komal Jain",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.5.0",
+    "cypress": "^9.5.1",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-wait-until": "^1.7.2",
+    "multiple-cucumber-html-reporter": "^1.19.0"
+  },
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "description": "  As an Applicant, I should be able to input values for the Main Contact Person and Letter of Offeree in the Contact Details page.",
+    "keyword": "Feature",
+    "name": "MRA grants form",
+    "line": 1,
+    "id": "mra-grants-form",
+    "tags": [],
+    "uri": "grantsFormSubmission.feature",
+    "elements": [
+      {
+        "id": "mra-grants-form;as-an-applicant-after-filling-in-half-details-in-mra-form-on-submitting-for-review-i-should-see-valid-error-messages",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As an Applicant after filling in half details in MRA form on submitting for review I should see valid error messages",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is logged-in and on MRA form",
+            "result": {
+              "status": "passed",
+              "duration": 128000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User enters Eligibility and Contact details",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User Goes to Declare & Review section and clicks on Review",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Incomplete sections should show error count in left side panel",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mra-grants-form;as-an-applicant-after-filling-all-details-and-submitting-for-review-i-should-see-read-only-summary",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "As an Applicant after filling all details and submitting for review I should see read only summary",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "User is on MRA Grants form",
+            "result": {
+              "status": "passed",
+              "duration": 67000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User fills in all details in all 6 sections",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User Goes to Declare & Review section and clicks on Review",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "User is on readonly summary page and all details match",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "mra-grants-form;as-an-applicant-i-after-filling-details-i-should-be-able-to-give-consent-and-submit-my-application",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "As an Applicant I after filling details I should be able to give consent and submit my application",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "User is on readonly summary page and all details match",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click on Consent and Acknowledge button",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Submit Application",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Success message should be generated with a Reference Id and Agency details",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "My Grants dashboard should show the Application under the Processing tab",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

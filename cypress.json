@@ -1,0 +1,5 @@
+{
+  "projectId": "KomalsFirstCypressProject",
+  "testFiles": "**/*.feature",
+  "chromeWebSecurity": false
+}

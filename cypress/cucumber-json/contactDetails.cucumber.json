@@ -1,0 +1,310 @@
+[
+  {
+    "description": "  As an Applicant, I should be able to answer a set of Yes/No Eligibility questions in the Eligibility page.",
+    "keyword": "Feature",
+    "name": "Contact details form",
+    "line": 1,
+    "id": "contact-details-form",
+    "tags": [],
+    "uri": "contactDetails.feature",
+    "elements": [
+      {
+        "id": "contact-details-form;as-an-applicant,-i-should-be-able-to-input-values-for-the-main-contact-person",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As an Applicant, I should be able to input values for the Main Contact Person",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User is logged-in and on MRA form",
+            "result": {
+              "status": "passed",
+              "duration": 192000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "User clicks on Contact details section",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Name",
+                      "Job Title",
+                      "Contact No",
+                      "Email",
+                      "Alternate Email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Komal Jain",
+                      "Sr. SDET",
+                      "88888888",
+                      "jain.komal06@gmail.com",
+                      "new@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "User fills in all Main Contact Person Details and saves",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Contact details draft should be successfully saved",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact-details-form;as-an-applicant-i-should-be-able-to-enter-postal-code-and-mailing-address-should-be-auto-populated-and-can-reload-page",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "As an Applicant I should be able to enter postal code and Mailing address should be auto-populated and can reload page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User is on Contact details section",
+            "result": {
+              "status": "passed",
+              "duration": 77000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User Enters postal code as '520405'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "House",
+                      "Street"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "405",
+                      "TAMPINES STREET 41"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Mailing address should be auto-populated",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "User reloads form",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Postal code should be reset",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact-details-form;as-an-applicant-i-should-be-able-to-use-mailing-address-from-company-profile",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "As an Applicant I should be able to use Mailing address from company profile",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "User is on Contact details section",
+            "result": {
+              "status": "passed",
+              "duration": 70000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User checks the Same as registered address in Company Profile checkbox",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "House",
+                      "Street"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "320",
+                      "BUKIT BATOK STREET 33"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Mailing address should be auto-populated",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact-details-form;as-an-applicant-i-should-be-able-to-enter-letter-of-offer-addressee-details",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "As an Applicant I should be able to enter Letter Of Offer Addressee details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "User is on Contact details section",
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "Enters Letter Of Offer Addressee details and hits Save",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Letter Of Offer Addressee details should be successfully updated in Draft",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "contact-details-form;as-an-applicant-i-should-be-able-to-retrieve-mra-form-draft-and-update-same-as-main-contact-person",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "As an Applicant I should be able to retrieve MRA form draft and update Same as main contact person",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "User selects MRA application from Drafts",
+            "result": {
+              "status": "passed",
+              "duration": 41000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "clicks on Proceed button",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Updates Same as main contact person checkbox and clicks Save",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "Letter Of Offer Addressee details should be updated as main contact person details",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
