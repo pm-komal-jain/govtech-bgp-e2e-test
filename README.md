@@ -37,16 +37,23 @@ BDD Tests are defined using Cucumber tool. Underlying tests are implemented usin
 ### About Project structure
     1. The Basic structure is auto created by Cypress.
     This project is designed to follow Page Object Model. So all the Page Objects can be found in -
-    ![img.png](img.png)
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/page-objects
 
     2. Tests are defined in BDD format into feature files -
-    ![img_1.png](img_1.png)
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/integration/bgp-e2e-tests/features
+    
     3. The Steps are defined into folder with same name as Feature files.
     Example Steps for - eligibility.feature are defined under `eligibility >> eligibilitySteps.js`
-    ![img_2.png](img_2.png)
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/integration/bgp-e2e-tests/features/eligibility    
+
     4. Videos are recorded and are placed under `cypress >> videos`
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/videos
+
     5. The screenshots are taken on failure and recorded under `cypress >> screenshots`
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/screenshots
+    
     6. Generated html report can be found under `cypress >> reports`
+    https://github.com/pm-komal-jain/govtech-bgp-e2e-test/tree/master/cypress/reports
 
 
     
