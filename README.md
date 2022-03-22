@@ -1,6 +1,6 @@
 # GovTech's BGP e2e tests using Cypress
 
-![BGP](https://ned-static-resources.s3.ap-southeast-1.amazonaws.com/BGP.gi)
+![BGP](https:///BGP.gif)
 
 This project aims at running UI tests on GovTech's Business Grants Portal. To achieve that automated tests are run using Cypress framework.
 BDD Tests are defined using Cucumber tool. Underlying tests are implemented using Javascript.
